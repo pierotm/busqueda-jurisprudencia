@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsc server.ts --module NodeNext --moduleResolution NodeNext --esModuleInterop --skipLibCheck && node server.js",
-    "start": "node server.js",
-    "build": "vite build && tsc server.ts --module NodeNext --moduleResolution NodeNext --esModuleInterop --skipLibCheck",
+    "dev": "tsc -p tsconfig.server.json && node dist-server/server.js",
+    "start": "node dist-server/server.js",
+    "build": "vite build && tsc -p tsconfig.server.json",
     "preview": "vite preview",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist dist-server",
     "lint": "tsc --noEmit"
   },
   "dependencies": {

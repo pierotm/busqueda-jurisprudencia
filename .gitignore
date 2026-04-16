@@ -5,5 +5,5 @@ coverage/
 .DS_Store
 *.log
 .env*
-server.js
+dist-server/
 temp_*.pdf
