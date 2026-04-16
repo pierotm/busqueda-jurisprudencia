@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsc server.ts --module NodeNext --moduleResolution NodeNext --esModuleInterop --skipLibCheck && node server.js",
-    "build": "vite build",
+    "start": "node server.js",
+    "build": "vite build && tsc server.ts --module NodeNext --moduleResolution NodeNext --esModuleInterop --skipLibCheck",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
